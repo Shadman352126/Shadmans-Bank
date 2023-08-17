@@ -4,11 +4,11 @@ document.getElementById("btn-submit").addEventListener("click", function () {
   const userPass = document.getElementById("user-pass").value;
 
   if (userEmail === "own@bank.com" && userPass === "shadman") {
-    console.log("valid user");
+    window.location.href = "dashboard.html";
   } else {
-    console.log("invalid user");
+    alert("tmi keda???");
+    window.location.href = "not.html";
   }
-  // console.log(userPass);
 });
-
+// console.log(userPass);
 // console.log("i am clicked");
