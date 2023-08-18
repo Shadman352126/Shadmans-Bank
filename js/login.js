@@ -10,5 +10,6 @@ document.getElementById("btn-submit").addEventListener("click", function () {
     window.location.href = "not.html";
   }
 });
+
 // console.log(userPass);
 // console.log("i am clicked");

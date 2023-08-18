@@ -15,24 +15,50 @@
         </h1>
     </header>
     <main>
-        <section>
-            <div class="grid grid-cols-3 gap-4">
-                <dix>
+        <!-- dashboard summary -->
+        <section class="mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 font-medium text-2xl text-white w-3/4 mx-auto">
+                <div class="bg-green-400 p-10 rounded-lg">
                     <h4>Deposit</h4>
-                    <h2>$00</h2>
-                </dix>
-                <dix>
+                    <h2 id="deposit" class="text-5xl">$00</h2>
+                </div>
+                <div class="bg-rose-400 p-10 rounded-lg">
                     <h4>Withdraw</h4>
-                    <h2>$00</h2>
-                </dix>
-                <dix>
+                    <h2 id="withdraw" class="text-5xl">$00</h2>
+                </div>
+                <div class="bg-violet-400 p-10 rounded-lg">
                     <h4>Balance</h4>
-                    <h2>$00</h2>
-                </dix>
+                    <h2 id="balance" class="text-5xl">$00</h2>
+                </div>
+            </div>
+        </section>
+        <!-- input fields -->
+        <section class="my-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-medium text-2xl text-violet w-3/4 mx-auto">
+                <div class="bg-lime-300 p-10 rounded-lg">
+                    <h4>Deposit money</h4>
+                    <input type="text" id="diposit-input" class="block my-8 w-3/4">
+                    <button id="btn-diposit"
+                        class="py-2 px-6 text-lg bg-green-400 rounded-lg hover:bg-green-700">Deposit</button>
+                </div>
+                <div class="bg-red-300 p-10 rounded-lg">
+                    <h4>Withdraw Money</h4>
+                    <input type="text" id="withdraw-input" class="block my-8 w-3/4">
+                    <button id="btn-withdraw"
+                        class="py-2 px-6 text-lg bg-rose-400 rounded-lg hover:bg-red-700">Withdraw</button>
+                </div>
             </div>
         </section>
     </main>
     <script src="js/login.js"></script>
+    <script>
+        document.getElementById("btn-diposit").addEventListener("click", function () {
+            console.log("i am clicked");
+        });
+        document.getElementById("btn-withdraw").addEventListener("click", function () {
+            console.log("i am clicked");
+        });
+    </script>
 </body>
 
 </html>
